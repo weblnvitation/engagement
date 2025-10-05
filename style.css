@@ -338,20 +338,21 @@ footer {
 }
 
 /* Update existing mobile styles and add new ones */
+/* Mobile Styles - Combined and Optimized */
 @media (max-width: 768px) {
   .yes {
-    font-size: 3.2rem; /* Slightly smaller for better fit */
-    top: 25%; /* Adjust position */
+    font-size: 3.2rem;
+    top: 25%;
     padding: 0 15px;
   }
 
   .guests {
-    font-size: 1.6rem; /* Scale down guest names */
+    font-size: 1.6rem;
   }
 
   .video-btn {
-    bottom: 10px; /* Better positioning */
-    font-size: 2.5rem; /* Smaller icon */
+    bottom: 10px;
+    font-size: 2.5rem;
   }
 
   .content-section {
@@ -360,23 +361,23 @@ footer {
   }
 
   .invite-text {
-    font-size: 1.1rem; /* Better readability */
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 
   .timer {
     font-size: 1.5rem;
-    margin-top: 60px; /* Reduce spacing */
+    margin-top: 60px;
   }
 
   .countdown {
-    gap: 15px; /* Tighter spacing */
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 15px;
+    flex-wrap: wrap;
   }
 
   .number {
     font-size: 1.6rem;
-    min-width: 40px; /* Smaller boxes */
+    min-width: 40px;
   }
 
   .label {
@@ -384,16 +385,16 @@ footer {
   }
 
   .date-box {
-    padding: 40px 20px; /* Reduce padding */
+    padding: 40px 20px;
     margin-top: 20px;
   }
 
   .date {
-    font-size: 1.6rem; /* Scale down date text */
+    font-size: 1.6rem;
   }
 
   .location-collage {
-    grid-template-rows: repeat(2, 140px); /* Smaller images */
+    grid-template-rows: repeat(2, 140px); /* Keep 2x2 grid, adjust height */
     gap: 8px;
   }
 
@@ -411,7 +412,7 @@ footer {
   }
 
   .telegram-connect {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     align-items: center;
     gap: 30px;
   }
@@ -427,18 +428,40 @@ footer {
 
   .form-group input[type="text"] {
     padding: 10px;
-    font-size: 16px; /* Prevent zoom on iOS */
+    font-size: 16px;
   }
 
   .submit-btn {
     padding: 12px;
     font-size: 1rem;
   }
+
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+
+  .invitation-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Improve touch targets */
+  .video-btn,
+  .submit-btn,
+  .radio-group label {
+    min-height: 44px;
+  }
+
+  .radio-group input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 12px;
+  }
 }
 
 @media (max-width: 480px) {
   .yes {
-    font-size: 2.2rem; /* Even smaller for very small screens */
+    font-size: 2.5rem;
     top: 20%;
   }
 
@@ -447,12 +470,13 @@ footer {
   }
 
   .video-btn {
-    bottom: 5px;
+    bottom: -20px;
     font-size: 2rem;
   }
 
   .content-section {
     padding: 20px 15px;
+    margin-top: 20px;
   }
 
   .invite-text {
@@ -482,9 +506,10 @@ footer {
     padding: 30px 15px;
   }
 
+  /* Keep 2x2 grid for location collage, adjust height */
   .location-collage {
-    grid-template-columns: 1fr; /* Single column on very small screens */
-    grid-template-rows: repeat(4, 120px); /* 4 rows instead of 2x2 grid */
+    grid-template-rows: repeat(2, 100px);
+    gap: 6px;
   }
 
   .dress-code {
@@ -504,7 +529,7 @@ footer {
     font-size: 14px;
   }
 
-  /* Improve form usability on mobile */
+  /* Improve form usability */
   .radio-group label {
     font-size: 0.9rem;
     padding: 8px 0;
@@ -518,12 +543,16 @@ footer {
     padding: 20px 15px;
     font-size: 0.9rem;
   }
+
+  .hero-section::after {
+    height: 60px;
+  }
 }
 
 /* Additional improvements for very small devices */
 @media (max-width: 360px) {
   .yes {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .countdown {
@@ -538,47 +567,8 @@ footer {
   .date {
     font-size: 1.2rem;
   }
-}
 
-/* Prevent horizontal scrolling on all mobile devices */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .invitation-container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-/* Improve touch targets for mobile */
-@media (max-width: 768px) {
-  .video-btn,
-  .submit-btn,
-  .radio-group label {
-    min-height: 44px; /* Apple's recommended minimum touch target */
-  }
-
-  .radio-group input[type="radio"] {
-    transform: scale(1.2); /* Larger radio buttons */
-    margin-right: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .yes {
-    font-size: 2.5rem;
-  }
-
-  .video-btn {
-    bottom: -20px;
-  }
-  .content-section {
-    margin-top: 20px;
-  }
-
-  .hero-section::after {
-    height: 60px;
+  .location-collage {
+    grid-template-rows: repeat(2, 90px); /* Even smaller but still 2x2 */
   }
 }
