@@ -337,21 +337,236 @@ footer {
   font-style: italic;
 }
 
+/* Update existing mobile styles and add new ones */
 @media (max-width: 768px) {
   .yes {
-    font-size: 3.6rem;
+    font-size: 3.2rem; /* Slightly smaller for better fit */
+    top: 25%; /* Adjust position */
+    padding: 0 15px;
+  }
+
+  .guests {
+    font-size: 1.6rem; /* Scale down guest names */
   }
 
   .video-btn {
-    bottom: -20px;
+    bottom: 10px; /* Better positioning */
+    font-size: 2.5rem; /* Smaller icon */
   }
+
   .content-section {
+    padding: 25px 20px;
+    margin-top: 10px;
+  }
+
+  .invite-text {
+    font-size: 1.1rem; /* Better readability */
+    line-height: 1.5;
+  }
+
+  .timer {
+    font-size: 1.5rem;
+    margin-top: 60px; /* Reduce spacing */
+  }
+
+  .countdown {
+    gap: 15px; /* Tighter spacing */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+
+  .number {
+    font-size: 1.6rem;
+    min-width: 40px; /* Smaller boxes */
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .date-box {
+    padding: 40px 20px; /* Reduce padding */
     margin-top: 20px;
   }
 
-  .content-section,
+  .date {
+    font-size: 1.6rem; /* Scale down date text */
+  }
+
+  .location-collage {
+    grid-template-rows: repeat(2, 140px); /* Smaller images */
+    gap: 8px;
+  }
+
+  .dress-code {
+    font-size: 1.8rem;
+    margin-top: 60px;
+  }
+
+  .telegram-section {
+    padding-top: 60px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .telegram-connect {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    gap: 30px;
+  }
+
   .rsvp-form {
-    padding: 20px;
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+
+  .rsvp-text {
+    font-size: 1.1rem;
+  }
+
+  .form-group input[type="text"] {
+    padding: 10px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .yes {
+    font-size: 2.2rem; /* Even smaller for very small screens */
+    top: 20%;
+  }
+
+  .guests {
+    font-size: 1.3rem;
+  }
+
+  .hero-image {
+    height: 280px; /* Adjusted height */
+  }
+
+  .video-btn {
+    bottom: 5px;
+    font-size: 2rem;
+  }
+
+  .content-section {
+    padding: 20px 15px;
+  }
+
+  .invite-text {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+
+  .timer {
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .number {
+    font-size: 1.4rem;
+    min-width: 35px;
+  }
+
+  .date {
+    font-size: 1.4rem;
+  }
+
+  .date-box {
+    padding: 30px 15px;
+  }
+
+  .location-collage {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    grid-template-rows: repeat(4, 120px); /* 4 rows instead of 2x2 grid */
+  }
+
+  .dress-code {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+
+  .telegram-section {
+    padding-top: 40px;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .telegram-description {
+    font-size: 14px;
+  }
+
+  /* Improve form usability on mobile */
+  .radio-group label {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional improvements for very small devices */
+@media (max-width: 360px) {
+  .yes {
+    font-size: 1.8rem;
+  }
+
+  .countdown {
+    gap: 8px;
+  }
+
+  .number {
+    font-size: 1.2rem;
+    min-width: 30px;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+}
+
+/* Prevent horizontal scrolling on all mobile devices */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .invitation-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  .video-btn,
+  .submit-btn,
+  .radio-group label {
+    min-height: 44px; /* Apple's recommended minimum touch target */
+  }
+
+  .radio-group input[type="radio"] {
+    transform: scale(1.2); /* Larger radio buttons */
+    margin-right: 12px;
   }
 }
 
