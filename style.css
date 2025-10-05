@@ -446,10 +446,6 @@ footer {
     font-size: 1.3rem;
   }
 
-  .hero-image {
-    height: 280px; /* Adjusted height */
-  }
-
   .video-btn {
     bottom: 5px;
     font-size: 2rem;
@@ -580,10 +576,6 @@ footer {
   }
   .content-section {
     margin-top: 20px;
-  }
-
-  .hero-image {
-    height: 300px;
   }
 
   .hero-section::after {
