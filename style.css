@@ -16,15 +16,11 @@ body {
 
 @font-face {
   font-family: "SHK Dzeragir";
-  src: url("./fonts/SHK_Dzeragir.woff2") format("woff2"),
-       url("./fonts/SHK_Dzeragir.woff") format("woff"),
-       url("./fonts/SHK_Dzeragir.ttf") format("truetype");
+  src: url("./fonts/SHK_Dzeragir\ 2.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-
 
 @font-face {
   font-family: "Grapalat";
