@@ -13,6 +13,7 @@ body {
   background-position: center; /* centers the image */
   line-height: 1.6;
 }
+
 @font-face {
   font-family: "SHK Dzeragir";
   src: url("./fonts/SHK_Dzeragir.woff2") format("woff2");
