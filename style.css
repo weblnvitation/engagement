@@ -16,11 +16,14 @@ body {
 
 @font-face {
   font-family: "SHK Dzeragir";
-  src: url("./fonts/SHK_Dzeragir.woff2") format("woff2");
+  src: url("./fonts/SHK_Dzeragir.woff2") format("woff2"),
+       url("./fonts/SHK_Dzeragir.woff") format("woff"),
+       url("./fonts/SHK_Dzeragir.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 
 @font-face {
