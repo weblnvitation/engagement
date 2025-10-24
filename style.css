@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-  font-family: "Arial", sans-serif;
   color: #555;
   background-image: url("./images/background.jpg");
   background-repeat: repeat; /* repeats the image */
