@@ -13,14 +13,14 @@ body {
   background-position: center; /* centers the image */
   line-height: 1.6;
 }
-
 @font-face {
   font-family: "SHK Dzeragir";
-  src: url("./fonts/SHK_Dzeragir.otf") format("opentype");
+  src: url("./fonts/SHK_Dzeragir.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 @font-face {
   font-family: "Grapalat";
@@ -337,8 +337,7 @@ footer {
   font-style: italic;
 }
 
-/* Update existing mobile styles and add new ones */
-/* Mobile Styles - Combined and Optimized */
+
 @media (max-width: 768px) {
   .yes {
     font-size: 3.2rem;
